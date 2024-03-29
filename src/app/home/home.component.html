@@ -1,7 +1,9 @@
 <app-header></app-header>
 
-<div
-  class="flex justify-center items-center min-h-screen w-full bg-my-grey"
-></div>
+<div class="flex min-h-screen w-full bg-my-grey">
+  <h1 class="text-white m-5" *ngFor="let contact of contactList">
+    Hello World, my name is {{ contact.name }}.
+  </h1>
+</div>
 
 <app-footer></app-footer>
