@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
-import { OpenaiService } from '../openai.service';
-import { HttpClientModule } from '@angular/common/http';
-import { OpenAIResponse } from '../interfaces/openai-response.interface';
-import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
+import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
+import { OpenAIResponse } from '../interfaces/openai-response.interface';
+import { OpenaiService } from '../openai.service';
 
 @Component({
   selector: 'app-chatbot',

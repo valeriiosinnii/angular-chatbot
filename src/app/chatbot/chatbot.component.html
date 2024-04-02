@@ -1,6 +1,4 @@
-<div
-  class="bg-gray-100 font-sans leading-normal tracking-normal min-h-screen flex flex-col"
->
+<div class="bg-gray-100 font-sans leading-normal tracking-normal min-h-screen flex flex-col">
   <nav class="bg-gray-900 p-4">
     <div class="container mx-auto">
       <div class="flex items-center justify-between">
@@ -14,32 +12,21 @@
       <h2 class="text-2xl font-bold mb-2 text-gray-800">Try it now</h2>
 
       <div class="flex-1 mb-4 p-4 bg-gray-200 overflow-auto rounded">
-        <div
-          *ngFor="let message of conversation"
-          class="text-gray-800 p-2 rounded bg-gray-50 mb-2"
-        >
+        <div *ngFor="let message of conversation" class="text-gray-800 p-2 rounded bg-gray-50 mb-2">
           {{ message }}
         </div>
       </div>
 
       <div class="mt-auto">
-        <input
-          type="text"
-          [(ngModel)]="userMessage"
+        <input type="text" [(ngModel)]="userMessage"
           class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-          placeholder="Type your message here..."
-          (keyup.enter)="sendMessage()"
-        />
-        <button
-          (click)="sendMessage()"
-          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full mt-2"
-        >
+          placeholder="Type your message here..." (keyup.enter)="sendMessage()" />
+        <button (click)="sendMessage()"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full mt-2">
           Send
         </button>
-        <button
-          (click)="backToHome()"
-          class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded w-full mt-2"
-        >
+        <button (click)="backToHome()"
+          class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded w-full mt-2">
           Back To Home
         </button>
       </div>
@@ -61,11 +48,8 @@
           <h5 class="uppercase mb-6 font-bold">Contact Me</h5>
           <ul class="mb-4">
             <li>
-              <a
-                href="https://www.linkedin.com/in/valeriiosinnii/"
-                class="text-blue-300 hover:text-blue-500"
-                >Valerii</a
-              >
+              <a href="https://www.linkedin.com/in/valeriiosinnii/" class="text-blue-300 hover:text-blue-500"
+                target="_blank">Valerii</a>
             </li>
           </ul>
         </div>
