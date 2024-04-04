@@ -3,13 +3,21 @@ import { HttpClientModule } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
+import { FooterComponent } from '../footer/footer.component';
+import { HeaderComponent } from '../header/header.component';
 import { OpenAIResponse } from '../interfaces/openai-response.interface';
 import { OpenaiService } from '../openai.service';
 
 @Component({
   selector: 'app-chatbot',
   standalone: true,
-  imports: [HttpClientModule, FormsModule, CommonModule],
+  imports: [
+    HttpClientModule,
+    FormsModule,
+    CommonModule,
+    HeaderComponent,
+    FooterComponent,
+  ],
   providers: [OpenaiService],
   templateUrl: './chatbot.component.html',
   styleUrl: './chatbot.component.scss',
